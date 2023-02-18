@@ -10,19 +10,20 @@ function seleccionarMascotaJugador() {
     let inputTyphon = document.getElementById("typhon")
     let inputGaia = document.getElementById("gaia")
     let inputVulkan = document.getElementById("vulkan")
+    let spanMascotaJugador = document.getElementById("mascota-jugador")
 
     if (inputTryton.checked) {
-        alert("Seleccionaste a Tryton")
+        spanMascotaJugador.innerHTML = "Tryton"
     } else if (inputAtlas.checked) {
-        alert("Seleccionaste a Atlas")
+        spanMascotaJugador.innerHTML = "Atlas"
     } else if (inputIfrith.checked) {
-        alert("Seleccionaste a Ifrith")
+        spanMascotaJugador.innerHTML = "Ifrith"
     } else if (inputTyphon.checked) {
-        alert("Seleccionaste a Typhon")
+        spanMascotaJugador.innerHTML = "Typhon"
     } else if (inputGaia.checked) {
-        alert("Seleccionaste a Gaia")
+        spanMascotaJugador.innerHTML = "Gaia"
     } else if (inputVulkan.checked) {
-        alert("Seleccionaste a Vulkan")
+        spanMascotaJugador.innerHTML = "Vulkan"
     } else {
         alert("Selecciona una Digital Beast")
     }
