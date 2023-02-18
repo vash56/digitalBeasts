@@ -4,55 +4,31 @@ function iniciarJuego() {
 }
 
 function seleccionarMascotaJugador() {
-    let inputHipodoge = document.getElementById("hipodoge")
-    let inputCapipepo = document.getElementById("capipepo")
-    let inputRatigueya = document.getElementById("ratigueya")
-    let inputLangostelvis = document.getElementById("langostelvis")
-    let inputTucapalma = document.getElementById("tucapalma")
-    let inputPydos = document.getElementById("pydos")
-    let spanMascotaJugador = document.getElementById("mascota-jugador")
+    let inputTryton = document.getElementById("tryton")
+    let inputAtlas = document.getElementById("atlas")
+    let inputIfrith = document.getElementById("ifrith")
+    let inputTyphon = document.getElementById("typhon")
+    let inputGaia = document.getElementById("gaia")
+    let inputVulkan = document.getElementById("vulkan")
 
-    if (inputHipodoge.checked) {
-        spanMascotaJugador.innerHTML = "Hipodoge"
-    } else if (inputCapipepo.checked) {
-        spanMascotaJugador.innerHTML = "Capipepo"
-    } else if (inputRatigueya.checked) {
-        spanMascotaJugador.innerHTML = "Ratigueya"
-    } else if (inputLangostelvis.checked) {
-        spanMascotaJugador.innerHTML = "Langostelvis"
-    } else if (inputTucapalma.checked) {
-        spanMascotaJugador.innerHTML = "Tucapalma"
-    } else if (inputPydos.checked) {
-        spanMascotaJugador.innerHTML = "Pydos"
-    } else {
-        alert("Selecciona una mascota")
+    if (inputTryton.checked) {
+        alert("Seleccionaste a Tryton")
     }
-
-    seleccionarMascotaEnemigo()
-
-}
-
-function seleccionarMascotaEnemigo() {
-    let ataqueAleatorio = aleatorio(1,6)
-    let spanMascotaEnemigo = document.getElementById("mascota-enemigo")
-
-    if (ataqueAleatorio == 1) {
-        spanMascotaEnemigo.innerHTML = "Hipodoge"
-    } else if (ataqueAleatorio == 2) {
-        spanMascotaEnemigo.innerHTML = "Capipepo"
-    } else if (ataqueAleatorio == 3) {
-        spanMascotaEnemigo.innerHTML = "Ratigueya"
-    } else if (ataqueAleatorio == 4) {
-        spanMascotaEnemigo.innerHTML = "Langostelvis"
-    } else if (ataqueAleatorio == 5) {
-        spanMascotaEnemigo.innerHTML = "Tucapalma"
-    } else if (ataqueAleatorio == 6) {
-        spanMascotaEnemigo.innerHTML = "Pydos"
+    else if (inputAtlas.checked) {
+        alert("Seleccionaste a Atlas")
     }
-}
-
-function aleatorio(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min)
+    else if (inputIfrith.checked) {
+        alert("Seleccionaste a Ifrith")
+    }
+    else if (inputTyphon.checked) {
+        alert("Seleccionaste a Typhon")
+    }
+    else if (inputGaia.checked) {
+        alert("Seleccionaste a Gaia")
+    }
+    else if (inputVulkan.checked) {
+        alert("Seleccionaste a Vulkan")
+    }
 }
 
 window.addEventListener("load", iniciarJuego)
