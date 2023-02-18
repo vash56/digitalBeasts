@@ -13,21 +13,18 @@ function seleccionarMascotaJugador() {
 
     if (inputTryton.checked) {
         alert("Seleccionaste a Tryton")
-    }
-    else if (inputAtlas.checked) {
+    } else if (inputAtlas.checked) {
         alert("Seleccionaste a Atlas")
-    }
-    else if (inputIfrith.checked) {
+    } else if (inputIfrith.checked) {
         alert("Seleccionaste a Ifrith")
-    }
-    else if (inputTyphon.checked) {
+    } else if (inputTyphon.checked) {
         alert("Seleccionaste a Typhon")
-    }
-    else if (inputGaia.checked) {
+    } else if (inputGaia.checked) {
         alert("Seleccionaste a Gaia")
-    }
-    else if (inputVulkan.checked) {
+    } else if (inputVulkan.checked) {
         alert("Seleccionaste a Vulkan")
+    } else {
+        alert("Selecciona una Digital Beast")
     }
 }
 
