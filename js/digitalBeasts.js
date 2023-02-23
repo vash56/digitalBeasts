@@ -27,6 +27,31 @@ function seleccionarMascotaJugador() {
     } else {
         alert("Selecciona una Digital Beast")
     }
+
+    seleccionarMascotaEnemigo()
+}
+
+function seleccionarMascotaEnemigo() {
+    let ataqueAleatorio = aleatorio(1,3)
+    let spanMascotaEnemigo = document.getElementById("mascota-enemigo")
+
+    if (ataqueAleatorio == 1) {
+        spanMascotaEnemigo.innerHTML = "Tryton"
+    } else if (ataqueAleatorio == 2) {
+        spanMascotaEnemigo.innerHTML = "Atlas"
+    } else if (ataqueAleatorio == 3) {
+        spanMascotaEnemigo.innerHTML = "Ifrith"    
+    } else if (ataqueAleatorio == 4) {
+        spanMascotaEnemigo.innerHTML = "Typhon"
+    } else if (ataqueAleatorio == 5) {
+        spanMascotaEnemigo.innerHTML = "Gaia"
+    } else (ataqueAleatorio == 6) {
+        spanMascotaEnemigo.innerHTML = "Vulkan"
+    }
+}
+
+function aleatorio(min, max) {
+    return Math.floor(Math.ramdom() * (max - min + 1) + min)
 }
 
 window.addEventListener("load", iniciarJuego)
