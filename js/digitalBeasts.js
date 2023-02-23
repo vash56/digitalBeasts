@@ -45,7 +45,7 @@ function seleccionarMascotaEnemigo() {
         spanMascotaEnemigo.innerHTML = "Typhon"
     } else if (ataqueAleatorio == 5) {
         spanMascotaEnemigo.innerHTML = "Gaia"
-    } else if (ataqueAleatorio == 6) {
+    } else {
         spanMascotaEnemigo.innerHTML = "Vulkan"
     }
 }
