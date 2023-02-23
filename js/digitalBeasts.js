@@ -32,7 +32,7 @@ function seleccionarMascotaJugador() {
 }
 
 function seleccionarMascotaEnemigo() {
-    let ataqueAleatorio = aleatorio(1,3)
+    let ataqueAleatorio = aleatorio(1,6)
     let spanMascotaEnemigo = document.getElementById("mascota-enemigo")
 
     if (ataqueAleatorio == 1) {
