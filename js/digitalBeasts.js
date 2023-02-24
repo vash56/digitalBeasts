@@ -5,11 +5,11 @@ function iniciarJuego() {
     let botonMascotaJugador = document.getElementById("boton-mascota")
     botonMascotaJugador.addEventListener("click", seleccionarMascotaJugador)
 
-    let botonFuego = document.getElementById("boton-fuego)")
+    let botonFuego = document.getElementById("boton-fuego")
     botonFuego.addEventListener("click", ataqueFuego)
-    let botonAgua = document.getElementById("boton-agua)")
+    let botonAgua = document.getElementById("boton-agua")
     botonAgua.addEventListener("click", ataqueAgua)
-    let botonTierra = document.getElementById("boton-tierra)")
+    let botonTierra = document.getElementById("boton-tierra")
     botonTierra.addEventListener("click", ataqueTierra)
 }
 
