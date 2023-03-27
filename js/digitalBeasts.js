@@ -91,23 +91,23 @@ function ataqueAleatorioEnemigo() {
 
 function combate() {
     if(ataqueEnemigo == ataqueJugador) {
-        alert("EMPATE")
-    } else if(ataqueJugador == "FUEGO" && ataqueJugador == "TIERRA") {
-        alert("GANASTE")
-    } else if(ataqueJugador == "AGUA" && ataqueJugador == "FUEGO") {
-        alert("GANASTE")
-    } else if(ataqueJugador == "TIERRA" && ataqueJugador == "AGUA") {
-        alert("GANASTE")
+        crearMensaje("EMPATE")
+    } else if(ataqueJugador == "FUEGO" && ataqueEnemigo == "TIERRA") {
+        crearMensaje("GANASTE")
+    } else if(ataqueJugador == "AGUA" && ataqueEnemigo == "FUEGO") {
+        crearMensaje("GANASTE")
+    } else if(ataqueJugador == "TIERRA" && ataqueEnemigo == "AGUA") {
+        crearMensaje("GANASTE")
     } else {
-        alert("PERDISTE")
+        crearMensaje("PERDISTE")
     }
 }
 
-function crearMensaje() {
+function crearMensaje(resultado) {
     let sectionMensajes = document.getElementById("mensajes")
 
     let parrafo = document.createElement("p")
-    parrafo.innerHTML = "Tu beast atacó con " + ataqueJugador + ", la beast del enemigo atacó con " + ataqueEnemigo + " - PENDIENTE"
+    parrafo.innerHTML = "Tu beast atacó con " + ataqueJugador + ", la beast del enemigo atacó con " + ataqueEnemigo + " - " + resultado
 
     sectionMensajes.appendChild(parrafo)
 }
