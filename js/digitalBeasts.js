@@ -86,7 +86,21 @@ function ataqueAleatorioEnemigo() {
         ataqueEnemigo = "TIERRA"
     }
 
-    crearMensaje()
+    combate()
+}
+
+function combate() {
+    if(ataqueEnemigo == ataqueJugador) {
+        alert("EMPATE")
+    } else if(ataqueJugador == "FUEGO" && ataqueJugador == "TIERRA") {
+        alert("GANASTE")
+    } else if(ataqueJugador == "AGUA" && ataqueJugador == "FUEGO") {
+        alert("GANASTE")
+    } else if(ataqueJugador == "TIERRA" && ataqueJugador == "AGUA") {
+        alert("GANASTE")
+    } else {
+        alert("PERDISTE")
+    }
 }
 
 function crearMensaje() {
